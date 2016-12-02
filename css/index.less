@@ -1,0 +1,91 @@
+@black: #323232;
+@gray: #909090;
+@midgray: #D2D2D2;
+@lightgray: #dcdcdc;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.dd-demo {
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	background: #AAAAAA;
+
+	>h3 {
+		line-height: 40px;
+	}
+
+}
+
+.title {
+	text-decoration: none;
+	line-height: 30px;
+}
+
+.dd-btn {
+	padding: 10px 20px;
+	margin-right: 10px;
+	background-color: #fff;
+	border-radius: 6px;
+	border: 1px @gray solid;
+	cursor: pointer;
+}
+.btn{
+	margin:0 5px;
+}
+
+.container {
+	>div {
+		display: inline-block;
+	}
+
+	>#nav-right {
+		width: 14%;
+		color: @midgray;
+		padding-left: 2%;
+		padding-top: 30px;
+		position: absolute;
+		right: 0;
+
+		a {
+			color: @midgray;
+		}
+
+	}
+
+	>#nav-left {
+		width: 86%;
+		overflow: auto;
+
+		>.content-cell {
+			padding: 20px 30px;
+			overflow-x: hidden;
+			>label {
+				font-size: 24px;
+				display: block;
+				margin-bottom: 10px;
+			}
+			>pre{
+				font-size: 14px;
+				color:@gray;
+				line-height: 22px;
+			}
+		}
+
+	}
+
+}
+.input-container{
+	>input{
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+}
+.go-top{
+	position:fixed;
+	bottom:20px;
+	right:10px;
+}

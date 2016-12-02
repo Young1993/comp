@@ -1,0 +1,287 @@
+@black: #323232;
+@gray: #909090;
+@midgray: #D2D2D2;
+@lightgray: #dcdcdc;
+@normal: #4FC3F7;
+@hover: #03a9f4;
+@press: #0092D6;
+@blue: #03a9f4;
+@orange: #F4873D;
+@oranger: #da7415;
+@orangest: #c56206;
+.mask-modal {
+	position: fixed;
+	opacity: .5;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	z-index: 100000;
+}
+
+.dd-modal {
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100001;
+	border-radius: 6px;
+}
+
+.hheader-modal {
+	padding: 34px 50px;
+
+	>.title-modal {
+		font-size: 20px;
+		color: @black;
+	}
+
+	>.close-left {
+		position: absolute;
+		display: block;
+		right: 69px;
+		top: 0;
+		width: 1px;
+		height: 30px;
+		background: linear-gradient(to bottom, @midgray, #fff);
+	}
+
+	>.close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 68px;
+		height: 30px;
+		text-align: center;
+		cursor: pointer;
+		line-height: 30px;
+		color: @gray;
+		font-size: 24px;
+	}
+
+	>.close:hover {
+		background-color: #CC122B;
+		color: #fff;
+		border-top-right-radius: 6px;
+	}
+
+}
+
+.ccontent-modal {
+	padding: 0 50px 20px 50px;
+	color: @gray;
+	font-size: 14px;
+
+	>span {
+		line-height: 20px;
+	}
+
+	.content-warn {
+		width: 20px;
+		line-height: 20px;
+		float: left;
+		margin-right: 8px;
+	}
+
+}
+
+.ffooter-modal {
+	border-top: 1px solid @midgray;
+	padding: 34px 50px 40px 50px;
+	overflow: auto;
+
+	>button {
+		float: right;
+		border: none;
+		border-radius: 4px;
+		font-size: 14px;
+		cursor: pointer;
+		width: 88px;
+		height: 32px;
+		margin-left: 4px;
+	}
+
+	>.shut-default {
+		background-color: #fff;
+		color: @gray;
+		border: solid 1px @gray;
+	}
+
+	>.shut-normal,
+	>.shut-info {
+		background-color: @normal;
+		color: #fff;
+	}
+
+	>.shut-normal:hover,
+	>.shut-info:hover {
+		background-color: @hover;
+	}
+
+	>.shut-normal:focus,
+	>.shut-info:focus {
+		background-color: @press;
+		outline: none;
+	}
+
+	>.shut-warning {
+		background-color: @orange;
+		color: #fff;
+	}
+
+	>.shut-warning:hover {
+		background-color: @oranger;
+	}
+
+	>.shut-warning:focus {
+		background-color: @orangest;
+		outline: none;
+	}
+
+	>.form-default {
+		width: 100%;
+		background-color: @normal;
+		color: #fff;
+	}
+
+	>.form-default:hover {
+		background-color: @hover;
+	}
+
+}
+
+.header-modal {
+	padding: 34px 30px 14px 30px;
+
+	>.title-modal {
+		font-size: 20px;
+		color: @black;
+	}
+
+	>.close-left {
+		position: absolute;
+		display: block;
+		right: 47px;
+		top: 0;
+		width: 1px;
+		height: 30px;
+		background: linear-gradient(to bottom, @midgray, #fff);
+	}
+
+	>.close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 46px;
+		height: 30px;
+		text-align: center;
+		cursor: pointer;
+		line-height: 30px;
+		color: @gray;
+		font-size: 24px;
+	}
+
+	>.close:hover {
+		background-color: #CC122B;
+		color: #fff;
+		border-top-right-radius: 6px;
+	}
+
+}
+
+.content-modal {
+	padding: 0 30px 20px 30px;
+	color: @gray;
+	font-size: 14px;
+
+	>span {
+		line-height: 20px;
+	}
+
+	.content-warn {
+		width: 20px;
+		line-height: 20px;
+		float: left;
+		margin-right: 8px;
+	}
+
+}
+
+.orange {
+	color: @orange;
+}
+
+.footer-modal {
+	border-top: 1px solid @midgray;
+	padding: 14px 30px 14px 30px;
+	overflow: auto;
+
+	>button {
+		float: right;
+		border: none;
+		border-radius: 4px;
+		font-size: 14px;
+		cursor: pointer;
+		width: 88px;
+		height: 32px;
+		margin-left: 4px;
+	}
+
+	>.shut-default {
+		background-color: #fff;
+		color: @gray;
+		border: solid 1px @gray;
+	}
+
+	>.shut-normal,
+	>.shut-info {
+		background-color: @normal;
+		color: #fff;
+	}
+
+	>.shut-normal:hover,
+	>.shut-info:hover {
+		background-color: @hover;
+	}
+
+	>.shut-normal:focus,
+	>.shut-info:focus {
+		background-color: @press;
+		outline: none;
+	}
+
+	>.shut-warning {
+		background-color: @orange;
+		color: #fff;
+	}
+
+	>.shut-warning:hover {
+		background-color: @oranger;
+	}
+
+	>.shut-warning:focus {
+		background-color: @orangest;
+		outline: none;
+	}
+
+	>.form-default {
+		width: 100%;
+		background-color: @normal;
+		color: #fff;
+	}
+
+	>.form-default:hover {
+		background-color: @hover;
+	}
+
+}
+
+.title-ul {
+	margin-top: 10px;
+
+	>li>a {
+		color: #fff;
+	}
+
+}
