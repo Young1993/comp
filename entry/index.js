@@ -12,7 +12,7 @@ class Comp extends Component {
 		return (
 			<div className="container">
 			<CompLeft /> 
-			<CompRight />
+		// <CompRight />
 			</div>
 		);
 	}

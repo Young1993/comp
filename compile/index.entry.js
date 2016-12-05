@@ -96,6 +96,7 @@
 					'div',
 					{ className: 'container' },
 					_react2.default.createElement(CompLeft, null),
+					'// ',
 					_react2.default.createElement(CompRight, null)
 				);
 			}
